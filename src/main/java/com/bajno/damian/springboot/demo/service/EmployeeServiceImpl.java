@@ -3,6 +3,7 @@ package com.bajno.damian.springboot.demo.service;
 import com.bajno.damian.springboot.demo.DAO.EmployeeDAO;
 import com.bajno.damian.springboot.demo.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -14,7 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeDAO employeeDAO;
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeDAO employeeDAO) {
+    public EmployeeServiceImpl(@Qualifier("employeeDAOJPAImpl") EmployeeDAO employeeDAO) {
         this.employeeDAO = employeeDAO;
     }
 

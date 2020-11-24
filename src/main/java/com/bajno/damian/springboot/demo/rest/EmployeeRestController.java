@@ -1,6 +1,5 @@
 package com.bajno.damian.springboot.demo.rest;
 
-import com.bajno.damian.springboot.demo.DAO.EmployeeDAO;
 import com.bajno.damian.springboot.demo.entity.Employee;
 import com.bajno.damian.springboot.demo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;

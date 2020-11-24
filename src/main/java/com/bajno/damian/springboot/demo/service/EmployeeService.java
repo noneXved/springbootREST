@@ -1,10 +1,10 @@
-package com.bajno.damian.springboot.demo.DAO;
+package com.bajno.damian.springboot.demo.service;
 
 import com.bajno.damian.springboot.demo.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
     public List<Employee> findAll();
 
